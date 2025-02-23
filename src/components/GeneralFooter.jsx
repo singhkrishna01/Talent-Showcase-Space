@@ -17,8 +17,7 @@ const GeneralFooter = () => {
                     <i className='bx bx-question-mark' ></i>
                 </a>
             </div>
-
-            <p className='md:order-2'>• Copyright ©2024 | All rights reserved •</p>
+            <p className='md:order-2'>• Copyright ©2025 | All rights reserved •</p>
             <p>Krishna Singh</p>
         </footer>
     )
