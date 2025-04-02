@@ -56,18 +56,24 @@ const AllProjects = () => {
         },
         {
             id: 9,
+            src: "/images/projectsImages/Replace.png",
+            demo: 'https://string-replacement.netlify.app/',
+            code: 'https://github.com/singhkrishna01/Real-Time-Text-Analyzer'
+        },
+        {
+            id: 10,
             src: "/images/projectsImages/age.png",
             demo: 'https://age-quantify.netlify.app/',
             code: 'https://github.com/singhkrishna01/Age-Calculator'
         },
         {
-            id: 10,
+            id: 11,
             src: "/images/projectsImages/calc.png",
             demo: 'https://ks-calculator.vercel.app/',
             code: 'https://github.com/singhkrishna01/CalcBot'
         },
         {
-            id: 11,
+            id: 12,
             src: "/images/projectsImages/buzz.png",
             demo: 'https://buzzblink.netlify.app/',
             code: 'https://github.com/singhkrishna01/Social-Media-Networking'
