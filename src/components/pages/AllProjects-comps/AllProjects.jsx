@@ -19,9 +19,9 @@ const AllProjects = () => {
         },
         {
             id: 3,
-            src: "/images/projectsImages/dogsblog.webp",
-            demo: 'https://barking-blogs.netlify.app/',
-            code: 'https://github.com/singhkrishna01/Barking-Blog'
+            src: "/images/projectsImages/fitness.png",
+            demo: '',
+            code: 'https://github.com/singhkrishna01/The-Fit-Club'
         },
         {
             id: 4,
@@ -31,37 +31,43 @@ const AllProjects = () => {
         },
         {
             id: 5,
+            src: "/images/projectsImages/campustech.png",
+            demo: 'https://grapdes-campustech.netlify.app/',
+            code: 'https://github.com/singhkrishna01/Campus-Tech-Site'
+        },
+        {
+            id: 6,
             src: "/images/projectsImages/Weather.png",
             demo: 'https://whiz-weather.netlify.app/',
             code: 'https://github.com/singhkrishna01/Weather-Whiz'
         },
         {
             
-            id: 6,
+            id: 7,
             src: "/images/projectsImages/front.png",
             demo: 'https://strategic-grid.netlify.app/',
             code: 'https://github.com/singhkrishna01/Strategic-Grid'
         },
         {
-            id: 7,
+            id: 8,
             src: todomachine,
             demo: '',
             code: 'https://github.com/singhkrishna01/TO-DO-MACHINE'
         },
         {
-            id: 8,
+            id: 9,
             src: "/images/projectsImages/age.png",
             demo: 'https://age-quantify.netlify.app/',
             code: 'https://github.com/singhkrishna01/Age-Calculator'
         },
         {
-            id: 9,
+            id: 10,
             src: "/images/projectsImages/calc.png",
             demo: 'https://ks-calculator.vercel.app/',
             code: 'https://github.com/singhkrishna01/CalcBot'
         },
         {
-            id: 10,
+            id: 11,
             src: "/images/projectsImages/buzz.png",
             demo: 'https://buzzblink.netlify.app/',
             code: 'https://github.com/singhkrishna01/Social-Media-Networking'

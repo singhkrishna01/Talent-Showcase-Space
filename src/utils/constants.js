@@ -20,13 +20,13 @@ const projects = [
   },
   {
     id: 3,
-    title: "Dogs Blog",
+    title: "The Fit Club",
     description:
-      "DogsBlog is a page for dog lovers where you can find some articles with relevant information about the care of these beautiful animals.",
-    technologies: "Javascript, HTML5, CSS3",
-    src: "/images/projectsImages/dogsblog.webp",
-    demo: "https://barking-blogs.netlify.app/",
-    code: "https://github.com/singhkrishna01/Barking-Blog",
+      "The Fit Club is a sleek, front-end fitness platform with an engaging UI, showcasing workout plans, trainers, and membership details. It delivers a seamless user experience with a responsive and modern design.",
+    technologies: "React JS, Javascript, HTML5, CSS3",
+    src: "/images/projectsImages/fitness.png",
+    demo: "",
+    code: "https://github.com/singhkrishna01/The-Fit-Club",
   },
   {
     id: 4,
@@ -38,8 +38,19 @@ const projects = [
     demo: "https://codex-reactjs.netlify.app/",
     code: "https://github.com/singhkrishna01/Codex-React-Page",
   },
+  
   {
     id: 5,
+    title: "Campus Tech",
+    description:
+      "Campus Tech is a sleek front-end platform showcasing campus innovations, tech events, and resources with a smooth, responsive UI.",
+    technologies: "React JS, BootStrap, Javascript, HTML5, CSS3",
+    src: "/images/projectsImages/campustech.png",
+    demo: "https://grapdes-campustech.netlify.app/",
+    code: "https://github.com/singhkrishna01/Campus-Tech-Site",
+  },
+  {
+    id: 6,
     title: "Weather Whiz",
     description:
       "An application to know the weather in your current location in degrees Celsius or degrees Fahrenheit. You can also search for the weather in other cities around the world.",
@@ -47,16 +58,6 @@ const projects = [
     src: "/images/projectsImages/Weather.png",
     demo: "https://whiz-weather.netlify.app/",
     code: "https://github.com/singhkrishna01/Weather-Whiz",
-  },
-  {
-    id: 6,
-    title: "Strategic-Grid",
-    description:
-      "Strategic-Grid elevates classic tic-tac-toe with advanced AI strategies and a sleek, user-friendly interface for an enhanced gameplay experience.",
-    technologies: "Javascript, React, HTML5, CSS3",
-    src: "/images/projectsImages/front.png",
-    demo: "https://strategic-grid.netlify.app/",
-    code: "https://github.com/singhkrishna01/Strategic-Grid",
   },
 ];
 
