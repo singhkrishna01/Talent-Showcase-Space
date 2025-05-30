@@ -44,7 +44,7 @@ const AllProjects = () => {
         {
             
             id: 7,
-            src: "/images/projectsImages/srt.png",
+            src: "public/images/projectsImages/srt.png",
             demo: 'https://sorting-explorer.netlify.app/',
             code: 'https://github.com/singhkrishna01/Dynamic-Sorting-Explorer'
         },
