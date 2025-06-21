@@ -7,9 +7,21 @@ const AllProjects = () => {
     const projects = [
         {
             id: 1,
+            src: "/images/projectsImages/chatbot.png",
+            demo: 'https://chatbot-wiml.onrender.com/',
+            code: 'https://github.com/singhkrishna01/ChatBot'
+        },
+        {
+            id: 2,
             src: "/images/projectsImages/Shoppers.png",
             demo: '',
             code: 'https://github.com/singhkrishna01/Shoppers_Ecommerce'
+        },
+         {
+            id: 3,
+            src: "/images/projectsImages/Codex.png",
+            demo: 'https://codex-reactjs.netlify.app/',
+            code: 'https://github.com/singhkrishna01/Codex-React-Page'
         },
         {
             id: 2,
@@ -17,18 +29,8 @@ const AllProjects = () => {
             demo: '',
             code: 'https://github.com/singhkrishna01/Job_Portal_Frontend'
         },
-        {
-            id: 3,
-            src: "/images/projectsImages/fitness.png",
-            demo: '',
-            code: 'https://github.com/singhkrishna01/The-Fit-Club'
-        },
-        {
-            id: 4,
-            src: "/images/projectsImages/Codex.png",
-            demo: 'https://codex-reactjs.netlify.app/',
-            code: 'https://github.com/singhkrishna01/Codex-React-Page'
-        },
+
+       
         {
             id: 5,
             src: "/images/projectsImages/campustech.png",

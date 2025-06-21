@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaCode } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
@@ -25,6 +25,15 @@ const SocialLinks = () => {
             ),
             href: 'https://github.com/singhkrishna01'
         },
+                {
+            id: 2,
+            child: (
+                <>
+                Leetcode <FaCode  size={30} />
+                </>
+            ),
+            href: 'https://leetcode.com/u/Krishna2011/'
+        },
         {
             id: 3,
             child: (
@@ -32,7 +41,7 @@ const SocialLinks = () => {
                 Mail <HiOutlineMail size={30} />
                 </>
             ),
-            href: 'mailto:krishnasingh2753@gmail.com'
+            href: 'mailto:krishna00cs@gmail.com'
         },
         {
             id: 4,
@@ -41,7 +50,7 @@ const SocialLinks = () => {
                 Resume <BsFillPersonLinesFill size={30} />
                 </>
             ),
-            href: '',
+            href: 'https://drive.google.com/file/d/1JK3y-qfkYKwgFkXqByfLF-eUzijx1BWf/view?usp=drive_link',
             style: 'rounded-br-md',
             download: true
         }
