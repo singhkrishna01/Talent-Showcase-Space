@@ -15,7 +15,7 @@ export function ModalInfo({ SelectedProject, closeModal }) {
         </div>
 
         <div className="w-full text-white p-8 flex flex-col bg-black/80 border-opacity-70 border-primary-color rounded-bl-lg rounded-br-lg">
-          <h3 className="text-2xl font-semibold self-center pb-1 inline border-b-4 border-primary-color/60 mb-6">
+          <h3 className="text-2xl font-semibold self-center pb-1 inline border-b-4 border-primary-color/60 mb-6 animated-gradient text-center">
             {SelectedProject.title}
           </h3>
 
@@ -34,7 +34,7 @@ export function ModalInfo({ SelectedProject, closeModal }) {
               <span className="text-primary-color">Demo: </span>
               <a
                 target="_blank"
-                className="hover:underline hover:underline-offset-4 hover:text-dark-green transition-all duration-500"
+                className="hover:underline hover:underline-offset-4 hover:text-dark-purple transition-all duration-500"
                 href={SelectedProject.demo}
               >
                 Click here to see the project
@@ -45,7 +45,7 @@ export function ModalInfo({ SelectedProject, closeModal }) {
               <span className="text-primary-color">Code: </span>
               <a
                 target="_blank"
-                className="hover:underline hover:underline-offset-4 hover:text-dark-green transition-all duration-500"
+                className="hover:underline hover:underline-offset-4 hover:text-dark-purple transition-all duration-500"
                 href={SelectedProject.code}
               >
                 Click here to see the repository

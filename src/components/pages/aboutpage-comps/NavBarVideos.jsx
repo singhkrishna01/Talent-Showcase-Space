@@ -31,7 +31,7 @@ const NavbarVideos = () => {
     }, [])
 
     return (
-        <header className={`fixed top-0 flex bg-neutral-900/60 justify-between h-20 items-center py-4 px-2 text-white mx-auto md:px-24 md:py-0 w-full z-30 transition-colors duration-700 ${isScrolled ? 'bg-black/90' : ''}`}>
+        <header className={`fixed top-0 flex bg-black/60 justify-between h-20 items-center py-4 px-2 text-white mx-auto md:px-24 md:py-0 w-full z-30 transition-colors duration-700 ${isScrolled ? 'bg-black/90' : ''}`}>
             <div className='flex flex-row gap-4 items-center'>
                 <NavLink to='/' className='text-[1.1rem] lg:text-[1.3rem] hover:text-primary-color hover:scale-125 duration-500'>
                     <i className='bx bx-home-heart mr-2'></i>
@@ -52,7 +52,7 @@ const NavbarVideos = () => {
             </div>
 
             {isShowNav && (
-            <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black via-black to-green-950 opacity-90'>
+            <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black via-black to-purple-950 opacity-90'>
 
                 {links.map(({ id, link }) => (
                         <li  

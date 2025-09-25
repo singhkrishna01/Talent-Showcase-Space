@@ -51,8 +51,8 @@ const HomePage = () => {
             <Navbar />
             <Home />
             <About />
-            <MyProjects />
             <Techs />
+            <MyProjects />
             <CertificateSlider certificates={certificates} />
             <Contact />
         </>

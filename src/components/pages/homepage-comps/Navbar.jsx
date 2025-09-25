@@ -50,43 +50,68 @@ const Navbar = () => {
     }, [])
 
     return (
-        <header className={`fixed top-0 flex bg-neutral-900/60 justify-between h-20 items-center py-4 px-4 md:px-6 text-white mx-auto lg:px-24 md:py-0 w-full z-30 transition-colors duration-700 ${isScrolled ? 'bg-black/90' : ''}`}>
-            <div className='flex flex-row gap-4 items-center'>
-                <h1 className='text-[1.1rem] lg:text-[1.3rem] hover:text-primary-color hover:scale-125 duration-500'>
-                    <i className='bx bx-code-curly mr-2 text-base'></i>
-                    KS
-                </h1>
+        <header className={`fixed top-0 flex justify-between items-center h-20 px-4 sm:px-6 md:px-8 lg:px-24 w-full z-30 transition-all duration-700 liquid-navbar ${isScrolled ? 'liquid-glow' : ''}`}>
+            {/* Logo Section - Icon Only */}
+            <div className='flex items-center group relative liquid-logo'>
+                <div className='relative p-4 rounded-full bg-gradient-to-r from-primary-color/10 to-purple-600/10 border border-primary-color/20 group-hover:border-primary-color/40 transition-all duration-500'>
+                    <i className='bx bx-code-curly text-2xl text-primary-color group-hover:text-purple-300 transition-all duration-500 group-hover:scale-110'></i>
+                </div>
             </div>
 
-            <ul className='hidden lg:flex'>
+            {/* Desktop Navigation */}
+            <nav className='hidden lg:flex items-center space-x-2'>
                 {links.map(({ id, link }) => (
-                    <li key={id} className='cursor-pointer hover:scale-105 rounded-lg hover:bg-primary-color p-4 duration-200 hover:text-black text-[1.1rem] lg:text-[1.3rem]'>
-                        <Link to={link} smooth duration={450}>{link}</Link>
-                    </li>
-                ))}
-            </ul>
-
-            <div onClick={() => setIsShowNav(!isShowNav)} className='cursor-pointer pr-4 z-10 text-gray-100 lg:hidden'>
-                {isShowNav ? <FaTimes size={30} /> : <FaBars size={30} /> }
-            </div>
-
-            {isShowNav && (
-            <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black via-black to-green-950 opacity-90'>
-
-                {links.map(({ id, link }) => (
-                        <li  
-                        key={id} 
-                        className='px-4 cursor-pointer py-6 text-4xl opacity-100'>
-                            <Link 
-                            onClick={() => setIsShowNav(!isShowNav)}
+                    <div key={id} className='relative group'>
+                        <Link 
                             to={link} 
                             smooth 
-                            duration={500}>{link}</Link>
-                        </li>
+                            duration={450}
+                            className='relative text-gray-300 hover:text-white transition-all duration-500 font-medium text-sm px-4 py-3 rounded-xl liquid-underline navbar-link cursor-pointer'
+                        >
+                            <span className='relative z-10'>{link}</span>
+                        </Link>
+                    </div>
                 ))}
-            </ul> )}
+            </nav>
 
-            
+            {/* CTA Button */}
+            <div className='hidden lg:flex items-center'>
+                <button className='relative px-6 py-3 bg-gradient-to-r from-primary-color via-purple-600 to-primary-color text-black font-semibold rounded-xl hover:from-purple-600 hover:via-primary-color hover:to-purple-600 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/30 liquid-button'>
+                    <span className='relative z-10'>Get In Touch</span>
+                </button>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <div 
+                onClick={() => setIsShowNav(!isShowNav)} 
+                className='lg:hidden cursor-pointer p-3 rounded-xl hover:bg-gradient-to-r hover:from-primary-color/20 hover:to-purple-600/20 transition-all duration-500'
+            >
+                {isShowNav ? <FaTimes size={24} className='text-primary-color' /> : <FaBars size={24} />}
+            </div>
+
+            {/* Mobile Menu */}
+            {isShowNav && (
+                <div className='lg:hidden fixed inset-0 z-50'>
+                    <div className='absolute inset-0 bg-gradient-to-br from-black via-purple-900/30 to-black backdrop-blur-xl'></div>
+                    <div className='relative flex flex-col items-center justify-center h-full space-y-8'>
+                        {links.map(({ id, link }) => (
+                            <Link
+                                key={id}
+                                to={link}
+                                smooth
+                                duration={500}
+                                onClick={() => setIsShowNav(false)}
+                                className='text-3xl text-gray-300 hover:text-white transition-all duration-500 hover:scale-110 relative group px-6 py-3 rounded-xl liquid-underline navbar-link cursor-pointer'
+                            >
+                                <span className='relative z-10'>{link}</span>
+                            </Link>
+                        ))}
+                        <button className='mt-8 px-8 py-4 bg-gradient-to-r from-primary-color via-purple-600 to-primary-color text-black font-semibold rounded-xl hover:from-purple-600 hover:via-primary-color hover:to-purple-600 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/30 liquid-button'>
+                            Get In Touch
+                        </button>
+                    </div>
+                </div>
+            )}
         </header>
     )
 }

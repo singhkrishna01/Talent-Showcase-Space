@@ -11,9 +11,9 @@ export default {
       },
 
       colors: {
-        "primary-color": "#0DFC4B",
-        "light-green": "rgba(142, 255, 139, 0.5)",
-        "dark-green": "#8EFF8B",
+        "primary-color": "#a855f7",
+        "light-purple": "rgba(168, 85, 247, 0.5)",
+        "dark-purple": "#9333ea",
         "light-gray": "#AEAEAE",
       },
     },

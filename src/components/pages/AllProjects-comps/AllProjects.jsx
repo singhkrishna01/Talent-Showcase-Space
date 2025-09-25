@@ -101,7 +101,7 @@ const AllProjects = () => {
         
             <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
                 <div className='pb-8'>
-                    <h2 className='text-4xl font-bold inline border-b-4 border-primary-color/40 sm:text-5xl'>Projects</h2>
+                    <h2 className='text-4xl font-bold inline border-b-4 border-primary-color/40 sm:text-5xl animated-gradient text-center'>Projects</h2>
                     <p className='py-6'>Check out my best web applications here.</p>
                 </div>
 
@@ -121,7 +121,7 @@ const AllProjects = () => {
             </div>
 
             <div className='flex justify-center'>
-                <Link to='/' className='text-black font-semibold text-[16px] w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-t from-green-400 to-primary-color cursor-pointer mx-auto md:mx-0 self-end mt-8 hover:scale-110 duration-300'>
+                <Link to='/' className='text-black font-semibold text-[16px] w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-t from-purple-400 to-primary-color cursor-pointer mx-auto md:mx-0 self-end mt-8 hover:scale-110 duration-300'>
                     <span className=''><i className='bx bx-home-heart mr-2'></i></span>
                     Go back
                 </Link>

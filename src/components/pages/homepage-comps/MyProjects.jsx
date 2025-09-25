@@ -25,9 +25,9 @@ const MyProjects = () => {
       className="relative w-full text-white md:h-screen h-unset"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="mb-4">
-          <h2 className="text-4xl font-bold inline border-b-4 border-primary-color/40 sm:text-5xl pb-1">
-            Projects
+        <div className="mb-4 text-center">
+          <h2 className="text-4xl font-bold inline border-b-4 border-primary-color/40 sm:text-5xl pb-1 animated-gradient text-center">
+          Projects I've Built
           </h2>
           <p className="py-6">Check out some of my work here</p>
         </div>

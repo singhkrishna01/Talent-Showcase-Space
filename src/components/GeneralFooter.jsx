@@ -13,8 +13,8 @@ const GeneralFooter = () => {
                     <i className='bx bxl-linkedin-square' ></i>
                 </a>
 
-                <a className='text-4xl hover:text-primary-color hover:animate-bounce' target='_blank' href="">
-                    <i className='bx bx-question-mark' ></i>
+                <a className='text-4xl hover:text-primary-color hover:animate-bounce' target='_blank' href="https://leetcode.com/singhkrishna01/">
+                    <i className='bx bx-code-alt' ></i>
                 </a>
             </div>
             <p className='md:order-2'>• Copyright ©2025 | All rights reserved •</p>

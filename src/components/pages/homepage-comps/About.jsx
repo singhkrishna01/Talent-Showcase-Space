@@ -10,8 +10,8 @@ const About = () => {
 
             <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full text-lg'>
 
-                    <div className='pb-8'>
-                        <h2 className='text-4xl sm:text-5xl font-bold inline border-b-4 border-primary-color/40'>About me</h2>
+                    <div className='pb-8 text-center'>
+                        <h2 className='text-4xl sm:text-5xl font-bold inline border-b-4 border-primary-color/40 animated-gradient'>About me</h2>
                     </div>
 
                     <p className="mb-3 py-6"> I completed a B.Tech in Computer Science and Engineering from PSIT Kanpur and completed my schooling at Kendriya Vidyalaya No. 2 in Armapur. Professionally, I have gained valuable experience as a Web Developer at Zidio Development, where I honed my skills in both front-end and back-end technologies and contributed to numerous successful projects.</p>

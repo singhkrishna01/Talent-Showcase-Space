@@ -15,6 +15,332 @@
     box-shadow: 0 0 1rem 0 #d7000087;
 }
 
+    .animated-gradient {
+        background: linear-gradient(135deg, #fff, #8660fa, #a855f7, #8400ff, #a855f7, #fff);
+        background-size: 400% 400%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradientShift 3s ease-in-out infinite;
+    }
+
+    @keyframes gradientShift {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    /* Liquid Theme Effects */
+    .liquid-navbar {
+        background: linear-gradient(135deg, rgba(0,0,0,0.9) 0%, rgba(139, 69, 19, 0.1) 25%, rgba(75, 0, 130, 0.3) 50%, rgba(139, 69, 19, 0.1) 75%, rgba(0,0,0,0.9) 100%);
+        backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(168, 85, 247, 0.2);
+    }
+
+    .liquid-glow {
+        box-shadow: 0 8px 32px rgba(168, 85, 247, 0.1), 0 0 0 1px rgba(168, 85, 247, 0.05);
+    }
+
+    .liquid-logo {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .liquid-logo::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: conic-gradient(from 0deg, transparent, rgba(168, 85, 247, 0.3), transparent);
+        animation: liquidRotate 4s linear infinite;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .liquid-logo:hover::before {
+        opacity: 1;
+    }
+
+    @keyframes liquidRotate {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    .liquid-link {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .liquid-link::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(168, 85, 247, 0.3), transparent);
+        transition: left 0.6s ease;
+    }
+
+    .liquid-link:hover::before {
+        left: 100%;
+    }
+
+    .liquid-button {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .liquid-button::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        transition: left 0.5s ease;
+    }
+
+    .liquid-button:hover::before {
+        left: 100%;
+    }
+
+    .liquid-underline {
+        position: relative;
+    }
+
+    .liquid-underline::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: linear-gradient(90deg, #a855f7, #9333ea, #a855f7);
+        transition: width 0.5s ease;
+    }
+
+    .liquid-underline:hover::after {
+        width: 100%;
+    }
+
+    /* Custom Cursor Effects */
+    .custom-cursor {
+        cursor: none;
+        position: relative;
+    }
+
+    .custom-cursor::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background: radial-gradient(circle, rgba(168, 85, 247, 0.8) 0%, rgba(168, 85, 247, 0.4) 50%, transparent 100%);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 9999;
+        transform: translate(-50%, -50%);
+        transition: all 0.1s ease;
+        opacity: 0;
+    }
+
+    .custom-cursor:hover::before {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.5);
+        background: radial-gradient(circle, rgba(168, 85, 247, 1) 0%, rgba(168, 85, 247, 0.6) 50%, transparent 100%);
+    }
+
+    .navbar-link {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer !important;
+    }
+
+    .navbar-link::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        background: radial-gradient(circle, rgba(168, 85, 247, 0.3) 0%, transparent 70%);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.3s ease;
+        pointer-events: none;
+    }
+
+    .navbar-link:hover::after {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Certificate Carousel Animations */
+    .certificate-slide {
+        animation: slideInUp 0.8s ease-out;
+    }
+
+    @keyframes slideInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .certificate-card {
+        animation: fadeInScale 0.6s ease-out;
+    }
+
+    @keyframes fadeInScale {
+        0% {
+            opacity: 0;
+            transform: scale(0.8);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    .certificate-hover {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .certificate-hover::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(168, 85, 247, 0.3), transparent);
+        transition: left 0.6s ease;
+        z-index: 1;
+    }
+
+    .certificate-hover:hover::before {
+        left: 100%;
+    }
+
+    .slick-slide {
+        transition: all 2s linear !important;
+    }
+
+    .slick-slide.slick-active {
+        transform: scale(1.02);
+    }
+
+    .slick-track {
+        animation: continuousScroll 40s linear infinite;
+    }
+
+    @keyframes continuousScroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    .slick-dots li button:before {
+        color: #a855f7 !important;
+        font-size: 12px !important;
+    }
+
+    .slick-dots li.slick-active button:before {
+        color: #a855f7 !important;
+        transform: scale(1.2);
+    }
+
+    .slick-arrow {
+        background: rgba(0, 0, 0, 0.5) !important;
+        border-radius: 50% !important;
+        width: 40px !important;
+        height: 40px !important;
+        z-index: 10 !important;
+    }
+
+    .slick-arrow:hover {
+        background: rgba(168, 85, 247, 0.3) !important;
+        transform: scale(1.1);
+    }
+
+    .slick-arrow:before {
+        color: #a855f7 !important;
+        font-size: 20px !important;
+    }
+
+    /* Certificate Carousel Shadow Effects */
+    .certificate-shadow-left {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 80px;
+        background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0.4) 60%, transparent 100%);
+        z-index: 10;
+        pointer-events: none;
+    }
+
+    .certificate-shadow-right {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 80px;
+        background: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0.4) 60%, transparent 100%);
+        z-index: 10;
+        pointer-events: none;
+    }
+
+    .certificate-fade-in {
+        animation: fadeInFromShadow 0.8s ease-out;
+    }
+
+    .certificate-fade-out {
+        animation: fadeOutToShadow 0.8s ease-out;
+    }
+
+    @keyframes fadeInFromShadow {
+        0% {
+            opacity: 0;
+            transform: translateX(-20px) scale(0.95);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0) scale(1);
+        }
+    }
+
+    @keyframes fadeOutToShadow {
+        0% {
+            opacity: 1;
+            transform: translateX(0) scale(1);
+        }
+        100% {
+            opacity: 0;
+            transform: translateX(20px) scale(0.95);
+        }
+    }
+
+
     @media (max-height: 620px) {
         .h-unset {
             height: unset !important; 
