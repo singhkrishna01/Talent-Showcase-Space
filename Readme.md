@@ -36,7 +36,7 @@ This portfolio is a **modern, responsive, and interactive** web application desi
 
 ## 🛠️ Tech Stack
 - **HTML, CSS, JavaScript** – Core web technologies
-- **React.js** – Dynamic frontend framework
+- **React.js** – Dynamic frontend frameworks
 - **Bootstrap** – Responsive design and layout
 - **GSAP (GreenSock Animation Platform)** – Smooth animations
 
